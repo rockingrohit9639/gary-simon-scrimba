@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <title>Car Sales</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="static">
+            <h2> Available Cars </h2>
+            <p> There are 15 cars that match your criteria </p>
+        </div>
+    
+        <div class="menu">
+
+            <div class="search">
+                <input type="text">
+                <img src="assets/search.svg" alt="search_icon">
+            </div>
+
+            <img src="assets/menu.svg" alt="menu_icon" class="menu_btn">
+
+            <div class="menu_items">
+                <ul> 
+                    <li> 
+                        <div class="input">
+                            <input type="checkbox" id="new" name="filter" id="">
+                            <label for="new"> New cars </label>
+                        </div>
+                     </li>
+
+                     <li> 
+                        <div class="input">
+                            <input type="checkbox" id="used" name="filter" id="">
+                            <label for="used"> Used cars </label>
+                        </div>
+                     </li>
+
+                     <li> 
+                        <div class="input">
+                            <input type="checkbox" id="deal" name="filter" id="">
+                            <label for="deal"> Dealership </label>
+                        </div>
+                     </li>
+
+                     <li> 
+                        <div class="input">
+                            <input type="checkbox" id="owner" name="filter" id="">
+                            <label for="owner"> For sale by owner </label>
+                        </div>
+                     </li>
+                </ul>
+            </div>
+        </div>    
+        
+        <div class="headings">
+            <p> Car Details </p>
+            <p> Location </p>
+            <p> Price </p>
+            <p> ACTION </p>
+        </div>
+
+        <div class="content">
+            <h5> 2017 Toyota Highlander V4 </h5>
+
+            <p> 1944 Scrimba Ln <br> Youngstown, OH 44481 </p>
+
+
+            <h3> $17,400 </h3>
+
+            <img src="assets/save.svg" alt="save_icon" onclick="handleSave(event)" class="save">
+        </div>
+
+        <div class="content">
+            <h5> 2017 Toyota Highlander V4 </h5>
+
+            <p> 1944 Scrimba Ln <br> Youngstown, OH 44481 </p>
+
+            <h3> $17,400 </h3>
+
+            <img src="assets/save.svg" alt="save_icon" onclick="handleSave(event)">
+        </div>
+
+        <div class="content">
+            <h5> 2017 Toyota Highlander V4 </h5>
+
+            <p> 1944 Scrimba Ln <br> Youngstown, OH 44481 </p>
+
+            <h3> $17,400 </h3>
+
+            <img src="assets/save.svg" alt="save_icon" onclick="handleSave(event)">
+
+        </div>
+    </div>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

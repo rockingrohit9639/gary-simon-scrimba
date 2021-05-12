@@ -1,0 +1,176 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F4F4F4;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container {
+    margin: 1em;
+    padding: 6vw;
+}
+
+.container p {
+    font-size: 1rem;
+    font-weight: 100;
+    color: #565656;
+    margin-top: 1rem;
+}
+
+.menu {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.menu_btn {
+    cursor: pointer;
+}
+
+.menu_items {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 1rem;
+    background: #FFF;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: all 0.3s;
+    box-shadow: 11px 18px 54px rgba(0,0,0, .11);
+    z-index: 1;
+}
+
+.menu_items ul {
+    list-style-type: none;
+}
+
+.menu_items ul li {
+    padding: 0.3rem;
+}
+
+
+.headings {
+    display: none;
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+    background: #FFF;
+    padding: 0.3rem;
+    border-radius: 2rem;
+}
+
+.search img {
+    padding-right: 5px;
+}
+
+.search input {
+    outline: none;
+    border: none;
+    padding: 5px 15px;
+}
+
+.content {
+    margin-top: 3.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    position: relative;
+}
+
+.content:hover {
+    background: #FFF;
+}
+
+.static {
+    padding: 1rem;
+}
+
+.content h5 {
+    font-size: 1.1rem;
+    color: #008AD8;
+    font-weight: 100;
+}
+
+.content p {
+    margin: 1.5rem 0 1.5rem;
+    line-height: 120%;
+}
+
+.content img{
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+@media only screen and (min-width: 1000px) {
+    .menu {
+        float: right;
+    }
+
+    .headings {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background: #008AD8;
+        margin-top: 6.8rem;
+        padding: 5px 10px 18px;
+        border-radius: 6px;   
+    }
+
+    .headings p:nth-child(1) {
+        flex: 40%;
+    }
+
+    .headings p:nth-child(2) {
+        flex: 25%;
+    }
+
+    .headings p:nth-child(3) {
+        flex: 25%;
+    }
+
+    .headings p:nth-child(4) {
+        flex: 10%;
+    }
+
+    .headings p {
+        color: #FFF;
+    }
+
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .content h5 {
+        flex: 40%;
+    }
+
+    .content p {
+        flex: 25%;
+    }
+
+    .content h3 {
+        flex: 25%;
+    }
+
+    .content img {
+        position: unset;
+        flex: 10%;
+        width: 2rem;
+        height: 2rem;
+    }
+}
